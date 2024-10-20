@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Person {
 
   private final String name;
@@ -29,5 +31,17 @@ public class Person {
         ", age=" + age +
         ", gender=" + gender +
         '}';
+  }
+
+   static List<Person> getPeople() {
+    return List.of(
+            new Person("ahmed", 20, Gender.MALE),
+            new Person("asmae", 33, Gender.FEMALE),
+            new Person("nisrine", 57, Gender.FEMALE),
+            new Person("achraf", 14, Gender.MALE),
+            new Person("ali", 99, Gender.MALE),
+            new Person("narjiss", 7, Gender.FEMALE),
+            new Person("warda", 120, Gender.FEMALE)
+    );
   }
 }
