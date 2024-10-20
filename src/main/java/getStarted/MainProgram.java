@@ -1,7 +1,11 @@
+package getStarted;
+
+import getStarted.Gender;
+import getStarted.Person;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class MainProgram {
@@ -91,6 +95,11 @@ public class MainProgram {
                 .map(Person::getName)
                 .ifPresent(System.out::println);
     }
+
+
+
+    List<String> names=List.of("asmae","achraf","warda");
+
 }
 
 
